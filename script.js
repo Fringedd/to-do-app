@@ -72,12 +72,12 @@ function newElement() {
 
   const spanTwo = document.createElement('IMG');
   spanTwo.className = 'crossy';
-  spanTwo.src = './images/icon-cross.svg';
+  spanTwo.src = 'icon-cross.svg';
   li.appendChild(spanTwo);
 
   const imgX = document.createElement('IMG');
   imgX.className = 'check hidden';
-  imgX.src = './images/icon-check.svg';
+  imgX.src = 'icon-check.svg';
   span.appendChild(imgX);
 
   for (let i = 0; i < cloSee.length; i++) {
@@ -98,7 +98,7 @@ function newElement() {
   function nightDay() {
     if (background.classList.contains('day')) {
       background.classList.add('night');
-      toggler.src = './images/icon-sun.svg';
+      toggler.src = 'icon-sun.svg';
       background.classList.remove('day');
       document.body.style.backgroundColor = 'black';
       boxtThree.style.backgroundColor = 'hsl(235, 24%, 19%)';
@@ -109,7 +109,7 @@ function newElement() {
       li.style.color = 'hsl(234, 39%, 85%)';
     } else {
       background.classList.remove('night');
-      toggler.src = './images/icon-moon.svg';
+      toggler.src = 'icon-moon.svg';
       background.classList.add('day');
       document.body.style.backgroundColor = 'white';
       boxtThree.style.backgroundColor = 'white';
